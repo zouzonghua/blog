@@ -5,3 +5,7 @@ db.json
 node_modules/
 public/
 .deploy*/
+
+*.js linguist-language=javaScript
+*.css linguist-language=javaScript
+*.html linguist-language=javaScript
