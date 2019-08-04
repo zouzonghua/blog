@@ -6,7 +6,7 @@
 title: 邹宗华的个人博客
 subtitle: Zou ZongHua's Personal Blog
 description: 编写可维护的代码
-keywords:
+keywords: 前端开发,JavaScript,html5,css3,Jquery,NodeJs,Vue,React,编写可维护的代码
 author: zouzonghua
 language: zh-CN
 timezone:
@@ -81,3 +81,8 @@ deploy:
   type: git
   repo: git@github.com:zouzonghua/zouzonghua.github.io.git
   branch: master
+
+sitemap:
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
