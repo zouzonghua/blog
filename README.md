@@ -17,6 +17,6 @@ git clone git@github.com:zouzonghua/zouzonghua.github.io.git
 ```bash
 cd zouzonghua.github.io
 npm i
-git submodule init // 同步主题
+git submodule init
 git submodule update
 ```
