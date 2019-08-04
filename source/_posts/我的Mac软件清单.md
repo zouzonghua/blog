@@ -51,6 +51,7 @@ categories:
 - [Tooth Fairy](https://xclient.info/s/tooth-fairy.html) - 可以帮你一键切换 AirPods
 - [Snipaste](https://zh.snipaste.com/) - 一个简单但强大的截图工具
 - [CleanMyMac](https://drive.google.com/file/d/1eSkHWpxlZNAYpkIvuH1oKsV2N5MJtrhf/view?usp=sharing) - 让 Mac 更流畅好用的垃圾清理系统优化应用
+- [NightOwl](https://nightowl.kramser.xyz/) - 轻松切换 macos Mojaves 暗黑模式
 
 ### 远程协助
 
