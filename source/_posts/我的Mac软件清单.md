@@ -43,6 +43,7 @@ categories:
 ### 系统相关工具
 
 - [Tuxera NTFS](https://drive.google.com/file/d/1abaNkQhFPb9KuwYBuoikpkspa6dis0z7/view?usp=sharing) - Mac 上的 NTFS 文件系统驱动(10.13.6)
+- [Karabiner Elements](https://github.com/tekezo/Karabiner-Elements) - Karabiner-Elements是macOS Sierra（10.12）或更高版本上用于键盘自定义的强大工具
 - [Command Line Tools](https://drive.google.com/file/d/1vvnWCYyD_zzhxnJkOTm_rTqTp5Y8hnhr/view?usp=sharing) - Command_Line_Tools_macOS_10.13_for_Xcode_10.1(10.13.6)
 - [The Unarchiver](https://theunarchiver.com/) - 解压许多不同种类的归档压缩文件
 - [Mos](https://github.com/Caldis/Mos) - 让你的鼠标滚轮丝滑如触控板
