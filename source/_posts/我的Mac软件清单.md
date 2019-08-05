@@ -38,7 +38,7 @@ categories:
 
 ### 待办事项工具
 
-- [滴答清单](https://www.dida365.com/) - 轻便且强大的跨平台任务管理应用
+- [滴答清单](https://www.dida365.com/about/download) - 轻便且强大的跨平台任务管理应用
 
 ### 系统相关工具
 
