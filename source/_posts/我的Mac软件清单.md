@@ -65,7 +65,7 @@ categories:
 
 ### 科学上网
 
-- [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG/releases) - 一款 ShadowsocksX 客户端软件
+- [ShadowsocksX-NG-R8](https://drive.google.com/file/d/1oahjxSeTYVq0gE717QgviyvgGj6kXw2g/view?usp=sharing) - 一款 ShadowsocksX 客户端软件
 
 ### 视频播放
 
