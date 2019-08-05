@@ -27,6 +27,11 @@ categories:
 - [Node.js](https://nodejs.org/en/) - 是一个基于Chrome V8 引擎的JavaScript 运行环境
 - [Yarn](https://yarnpkg.com/zh-Hans/docs/install#mac-stable) - 快速、可靠、安全的依赖管理
 
+### 版本控制
+
+- [Versions](https://xclient.info/s/xversion.html) - Mac 上最好的 SVN 管理工具
+- [Git](https://git-scm.com/download/mac) - Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目
+
 ### 浏览器
 
 - [Goole Chrome](https://www.google.com/chrome/?platform=mac) - Google Chrome是由Google开发的免费网页浏览器
@@ -58,11 +63,6 @@ categories:
 
 - [TeamViewer](https://www.teamviewer.com/) - 远程协助及在线协作和会议功能的软件，商业软件个人使用免费
 
-### 版本控制
-
-- [Versions](https://xclient.info/s/xversion.html) - Mac 上最好的 SVN 管理工具
-- [Git](https://git-scm.com/download/mac) - 开发必备
-
 ### 科学上网
 
 - [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG/releases) - 一款 ShadowsocksX 客户端软件
@@ -74,4 +74,4 @@ categories:
 ### 阅读学习
 
 - [NeatReader](https://www.neat-reader.cn/downloads/mac) - 新世代ePub 阅读器，创造美好阅读时光
-- [欧路词典](http://www.eudic.net/v4/en/app/download) - 权威的英语词典软件 英语学习者必备的工具
+- [欧路词典](http://www.eudic.net/v4/en/app/download) - 权威的英语词典软件，英语学习者必备的工具
