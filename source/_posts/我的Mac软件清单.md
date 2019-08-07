@@ -65,7 +65,7 @@ categories:
 
 ## 远程协助
 
-- [TeamViewer](https://www.teamviewer.com/) - 远程协助及在线协作和会议功能的软件，商业软件个人使用免费
+- [TeamViewer](https://www.teamviewer.cn/cn/download/mac-os/) - 远程协助及在线协作和会议功能的软件，商业软件个人使用免费
 
 ## 科学上网
 
