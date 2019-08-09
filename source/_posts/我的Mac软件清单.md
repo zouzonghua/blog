@@ -23,11 +23,11 @@ categories:
 
 ## 开发工具
 
-- [Homebrew](https://brew.sh/index_zh-cn) - macOS 缺失的软件包的管理器 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-- [typora](https://www.typora.io/) - 一款轻便简洁的Markdown编辑器 `brew cask install typora`
+- [Homebrew](https://brew.sh/) - macOS 缺失的软件包的管理器
 - [iTerm2](https://www.iterm2.com/index.html) - MAC 下最好的终端工具 `brew cask install iterm2`
-- [Node.js](https://nodejs.org/en/) - 是一个基于Chrome V8 引擎的JavaScript 运行环境  `brew install node.js`
+- [typora](https://www.typora.io/) - 一款轻便简洁的Markdown编辑器 `brew cask install typora`
 - [Yarn](https://yarnpkg.com/zh-Hans/docs/install#mac-stable) - 快速、可靠、安全的依赖管理 `brew install yarn --without-node`
+- [Node.js](https://nodejs.org/en/) - 是一个基于Chrome V8 引擎的JavaScript 运行环境  `brew install node.js`
 - [Visual Studio Code](https://code.visualstudio.com/) - 微软推出的免费/开源编辑器，前端开发必备 `brew cask install visual-studio-code`
 
 ## 版本控制
@@ -37,12 +37,12 @@ categories:
 
 ## 浏览器
 
-- [Goole Chrome](https://www.google.com/chrome/?platform=mac) - Google Chrome是由Google开发的免费网页浏览器 `brew cask install google-chrome`
+- [Google Chrome](https://www.google.com/chrome/?platform=mac) - Google Chrome是由Google开发的免费网页浏览器 `brew cask install google-chrome`
 
 ## IM 工具
 
-- [QQ](http://im.qq.com/macqq/) - I'm QQ - 每一天，乐于沟通 `brew cask install qq`
 - [微信](https://mac.weixin.qq.com/?t=mac&platform=wx&lang=zh_CN  ) - 微信，是一个生活方式 `brew cask install wechat`
+- [QQ](http://im.qq.com/macqq/) - I'm QQ - 每一天，乐于沟通 `brew cask install qq`
 
 ## 待办事项工具
 
@@ -55,8 +55,8 @@ categories:
 - [CleanMyMac](https://drive.google.com/file/d/1eSkHWpxlZNAYpkIvuH1oKsV2N5MJtrhf/view?usp=sharing) - 让 Mac 更流畅好用的垃圾清理系统优化应用
 - [Tuxera NTFS](https://drive.google.com/file/d/1abaNkQhFPb9KuwYBuoikpkspa6dis0z7/view?usp=sharing) - Mac 上的 NTFS 文件系统驱动 macOS High Sierra(10.13.6)
 - [Fliqlo](https://fliqlo.com/) - 翻页时间屏保 `brew cask install fliqlo`
-- [Mos](https://github.com/Caldis/Mos) - 让你的鼠标滚轮丝滑如触控板 `brew cask install mos`
 - [Snipaste](https://zh.snipaste.com/) - 一个简单但强大的截图工具  `brew cask install snipaste`
+- [Mos](https://github.com/Caldis/Mos) - 让你的鼠标滚轮丝滑如触控板 `brew cask install mos`
 - [The Unarchiver](https://theunarchiver.com/) - 解压许多不同种类的归档压缩文件 `brew cask install the-unarchiver`
 - [Karabiner Elements](https://github.com/tekezo/Karabiner-Elements) - Karabiner-Elements是macOS Sierra（10.12）或更高版本上用于键盘自定义的强大工具 `brew cask install karabiner-elements`
 
@@ -68,9 +68,10 @@ categories:
 
 - [ShadowsocksX-NG-R8](https://github.com/qinyuhang/ShadowsocksX-NG-R/releases) - 一款 ShadowsocksX 客户端软件  `brew cask install shadowsocksx-ng-r`
 
-## 视频播放
+## 影音播放
 
 - [IINA](https://iina.io/)  - 一个现代的 macOS 视频播放器 `brew cask install iina`
+- [网易云音乐](https://music.163.com/#/download)  - 网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。 `brew cask install neteasemusic`
 
 ## 阅读学习
 
