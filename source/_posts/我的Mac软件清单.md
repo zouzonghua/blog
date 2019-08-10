@@ -46,7 +46,7 @@ categories:
 
 ## 待办事项工具
 
-- [滴答清单](https://www.dida365.com/about/download) - 轻便且强大的跨平台任务管理应用
+- [Microsoft TO-Do](https://todo.microsoft.com/zh-cn) - 从工作到休闲，To-Do 都是日常完成任务的最简便方式
 
 ## 系统相关工具
 
