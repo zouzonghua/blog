@@ -59,6 +59,7 @@ categories:
 - [Snipaste](https://zh.snipaste.com/) - 一个简单但强大的截图工具  `brew cask install snipaste`
 - [Alfred](https://www.alfredapp.com/) - Alfred可以说是Mac上的一款效率神器 `brew cask install alfred`
 - [The Unarchiver](https://theunarchiver.com/) - 解压许多不同种类的归档压缩文件 `brew cask install the-unarchiver`
+- [ShiftIt](https://github.com/fikovnik/ShiftIt) - ShiftIt 是 Mac 平台上的一款窗口位置和大小管理软件 `brew cask install shiftit`
 - [Karabiner Elements](https://github.com/tekezo/Karabiner-Elements) - Karabiner-Elements是macOS Sierra（10.12）或更高版本上用于键盘自定义的强大工具 `brew cask install karabiner-elements`
 
 ## 远程协助
