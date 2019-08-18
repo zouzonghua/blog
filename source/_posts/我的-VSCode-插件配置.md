@@ -70,7 +70,7 @@ categories:
     "plugins": []
   },
   "vetur.validation.template": false, // 是否使用vetur验证
-  "sync.gist": "8d12c4ddb0dec4861a328e2abaae840d",
+  "sync.gist": "xxx",
   "sync.autoDownload": false, // 自动恢复编辑器配置
   "sync.forceUpload": true,
   "fileheader.configObj": {
