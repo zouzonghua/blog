@@ -1,5 +1,5 @@
 ---
-title: 我的Mac软件清单
+title: 我的 Mac 软件清单
 date: 2019-07-26 09:51:30
 tags:
 - 软件
