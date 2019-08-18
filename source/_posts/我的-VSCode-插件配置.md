@@ -34,7 +34,7 @@ categories:
 13.  [open in browser]() - 在浏览器中快速打开 html 文件。
 14.  [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - VScode 中路径智能补全。
 15.  [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)  -自动引入 node_modules 中的 JS 路径。
-16.  [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) - 项目管理软件。
+16.  [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) - 项目管理插件。
 17.  [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - 绑定 GitHub 账户进行插件配置备份恢复。
 18.  [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) - 为侧边栏文件类型提供相应的图标。
 
