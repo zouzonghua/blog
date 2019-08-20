@@ -32,7 +32,7 @@ categories:
 
 ## 版本控制
 
-- [Versions](https://xclient.info/s/xversion.html) - Mac 上最好的 SVN 管理工具
+- [Cornerstone](https://xclient.info/s/cornerstone.html) - Mac 上最佳的 SVN 管理工具
 - [Git](https://git-scm.com/download/mac) - Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目 `brew install git`
 
 ## 浏览器
