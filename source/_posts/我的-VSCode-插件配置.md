@@ -27,7 +27,7 @@ categories:
 6. [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) - 增加代码中括号之间嵌套关系的颜色区分。
 7. [Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces) - 检查代码中多出空格，强迫症必备。
 8. [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - 开发 Vue 必装的一个插件。
-9. [JavaScript (ES6) code snippets in StandardJS style](https://marketplace.visualstudio.com/items?itemName=jmsv.JavaScriptSnippetsStandard) - ES6 常用代码片段，Standard 版本。
+9. [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) - ES7 React/Redux/GraphQL/React-Native snippets 常用代码片段。
 10. [koroFileHeader](https://marketplace.visualstudio.com/items?itemName=OBKoro1.korofileheader) - 在 vscode 中用于生成文件头部注释和函数注释的插件。
 11. [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - 一款强大 GIt 源代码管理插件。
 12. [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - 快速启动一个本地服务预览项目。
@@ -37,6 +37,8 @@ categories:
 16. [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) - 项目管理插件。
 17. [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - 绑定 GitHub 账户进行插件配置备份恢复。
 18. [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) - 为侧边栏文件类型提供相应的图标。
+19. [Oceanic Next](https://marketplace.visualstudio.com/items?itemName=mhartington.Oceanic-Next) - React 官方文档推荐的一款主题。
+20. [Sublime Babel](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode) - React 官方文档推荐的一款 ES6+ 语法高亮。
 
 ## 个人配置(Settings)
 
@@ -44,7 +46,7 @@ categories:
 {
   "workbench.editor.showTabs": true, // 控制打开的编辑器是否应显示在选项卡中
   "workbench.iconTheme": "vscode-icons", // 指定工作台中使用的图标主题
-  "editor.fontFamily": "Fira code", // 设置字体
+  // "editor.fontFamily": "Fira code", // 设置字体
   "editor.fontLigatures": true, // 启用/禁用字体连字
   "editor.fontSize": 14, // 字体大小
   "editor.tabSize": 2, // 一个制符表等于的空格数
@@ -73,8 +75,12 @@ categories:
   "sync.autoDownload": false, // 自动恢复编辑器配置
   "sync.forceUpload": true,
   "fileheader.configObj": {
+    "commitHooks": {
+      "allowHooks": false // 默认允许进行hooks，设为false即可关闭
+    },
     "autoAdd": false, // 关闭保存自动添加文件注释
     "colon": " ", // 所有注释的冒号改为一个空格，默认为": "
+    "moveCursor": true // 移动光标到`Description :`所在行
   },
   "fileheader.cursorMode": { //  函数注释
     "description": "",
@@ -96,7 +102,16 @@ categories:
     "other": true,
     "comments": true,
     "strings": true
-  }
+  },
+  "workbench.colorTheme": "Oceanic Next",
+  "files.associations": {
+    "*.js": "javascript",
+    "*.jsx": "javascriptreact"
+  },
+  "cSpell.userWords": [
+    "zouzonghua"
+  ]
 }
+
 
 ```
