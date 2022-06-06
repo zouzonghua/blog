@@ -15,6 +15,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '12.x'
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       - run: git config --global user.email "zouzonghua.cn@gmail.com"
       - run: git config --global user.name "zouzonghua"
       - run: yarn && yarn hexo d -g
