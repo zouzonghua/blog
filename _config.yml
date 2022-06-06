@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://zouzonghua.github.io/
+url: https://zouzonghua.github.io/blog/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,13 +73,13 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:zouzonghua/zouzonghua.github.io.git
+  repo: git@github.com:zouzonghua/blog.git
   branch: master
 
 sitemap:

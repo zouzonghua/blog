@@ -8,7 +8,7 @@ on:
 env:
   GIT_USER: zouzonghua
   GIT_EMAIL: zouzonghua.cn@gmail.com
-  DEPLOY_REPO: zouzonghua/zouzonghua.github.io
+  DEPLOY_REPO: zouzonghua/blog
   DEPLOY_BRANCH: hexo
 
 # 任务

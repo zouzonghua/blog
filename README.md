@@ -7,7 +7,7 @@
 克隆仓库到本地文件夹
 
 ```bash
-git clone git@github.com:zouzonghua/zouzonghua.github.io.git
+git clone git@github.com:zouzonghua/blog.git
 ```
 
 ### 第二步
@@ -15,7 +15,7 @@ git clone git@github.com:zouzonghua/zouzonghua.github.io.git
 安装项目依赖包
 
 ```bash
-cd zouzonghua.github.io
+cd blog
 npm i
 npm run hexo d -g
 ```
