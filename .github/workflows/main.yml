@@ -16,6 +16,6 @@ jobs:
         with:
           node-version: '12.x'
       - run: git config --global user.email "zouzonghua.cn@gmail.com"
-      - run: git config --global user "zouzonghua"
+      - run: git config --global user.name "zouzonghua"
       - run: yarn && yarn hexo d -g
 
