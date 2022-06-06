@@ -9,7 +9,7 @@ env:
   GIT_USER: zouzonghua
   GIT_EMAIL: zouzonghua.cn@gmail.com
   DEPLOY_REPO: zouzonghua/zouzonghua.github.io
-  DEPLOY_BRANCH: master
+  DEPLOY_BRANCH: hexo
 
 # 任务
 jobs:
@@ -36,7 +36,7 @@ jobs:
       - name: Use Node.js ${{ matrix.node_version }}
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node_version }
+          node-version: ${{ matrix.node_version }}
       
       
       - name: Configuration environment
