@@ -15,5 +15,5 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '12.x'
-      - run: yarn & yarn hexo d -g
+      - run: yarn && yarn hexo d -g
 
