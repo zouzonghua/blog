@@ -17,6 +17,5 @@ git clone git@github.com:zouzonghua/zouzonghua.github.io.git
 ```bash
 cd zouzonghua.github.io
 npm i
-git submodule init
-git submodule update
+npm run hexo d -g
 ```
