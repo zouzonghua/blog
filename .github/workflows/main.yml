@@ -19,7 +19,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node_version: [14.x]
+        node_version: [12.x, 14.x]
         
     steps:
       - name: Checkout
@@ -52,5 +52,5 @@ jobs:
           git config --global user.email $GIT_EMAIL
 
       - name: Deploy hexo
-        run:  yarn && yarn hexo d -g
+        run:  yarn && yarn hexo clean && yarn hexo d -g
 
