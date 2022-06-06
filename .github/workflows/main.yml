@@ -52,5 +52,5 @@ jobs:
           git config --global user.email $GIT_EMAIL
 
       - name: Deploy hexo
-        run:  yarn && yarn hexo clean && yarn hexo d -g
+        run:  npm i && yarn hexo clean && yarn hexo d -g
 
