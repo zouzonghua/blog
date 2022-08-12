@@ -66,9 +66,6 @@ categories:
 
 - [TeamViewer](https://www.teamviewer.cn/cn/download/mac-os/) - 远程协助及在线协作和会议功能的软件，商业软件个人使用免费 `brew cask install teamviewer`
 
-## 科学上网
-
-- [ShadowsocksX-NG-R8](https://github.com/qinyuhang/ShadowsocksX-NG-R/releases) - 一款 ShadowsocksX 客户端软件  `brew cask install shadowsocksx-ng-r`
 
 ## 影音播放
 
