@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 5.4.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"zouzonghua.github.io","root":"/blog/","images":"/blog/images","scheme":"Gemini","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/blog/js/config.js"></script>
+
+    <meta name="description" content="导读 Settings Sync 是 VSCode 编辑器上的一款插件，可以将当前编辑器所有配置和插件同步到 GitHub 上，以后只需要从 GitHub 上获取，就可以一次性恢复插件和配置。  适用于 Windows 系统 MacOS 系统 Ubuntu 系统  前序准备 下载安装 VSCode 编辑器 注册申请 GitHub 帐号  快速开始第一步 先在 VSCode 编辑器里面搜索安装 Se">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VSCode Settings Sync 插件的使用">
+<meta property="og:url" content="https://zouzonghua.github.io/blog/2019/07/26/VSCode-Settings-Suny-%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
+<meta property="og:site_name" content="宗华的博客">
+<meta property="og:description" content="导读 Settings Sync 是 VSCode 编辑器上的一款插件，可以将当前编辑器所有配置和插件同步到 GitHub 上，以后只需要从 GitHub 上获取，就可以一次性恢复插件和配置。  适用于 Windows 系统 MacOS 系统 Ubuntu 系统  前序准备 下载安装 VSCode 编辑器 注册申请 GitHub 帐号  快速开始第一步 先在 VSCode 编辑器里面搜索安装 Se">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006tNc79ly1g5d34f0n6aj31hc0r2jsx.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNc79gy1g5d855w5e4j31hc0r2acn.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNc79gy1g5d87yg51mj31hc0r2q3h.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006tNc79gy1g5d8a3xqsuj31hc0r2aa8.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006tNc79gy1g5d8nwl4ufj31hc0r2q4k.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006tNc79gy1g5d9x9hejuj31hc0r2jta.jpg">
+<meta property="article:published_time" content="2019-07-26T03:18:53.000Z">
+<meta property="article:modified_time" content="2023-03-01T04:48:22.549Z">
+<meta property="article:author" content="zouzonghua">
+<meta property="article:tag" content="VSCode">
+<meta property="article:tag" content="插件">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ww4.sinaimg.cn/large/006tNc79ly1g5d34f0n6aj31hc0r2jsx.jpg">
+
+
+<link rel="canonical" href="https://zouzonghua.github.io/blog/2019/07/26/VSCode-Settings-Suny-%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://zouzonghua.github.io/blog/2019/07/26/VSCode-Settings-Suny-%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/","path":"2019/07/26/VSCode-Settings-Suny-插件的使用/","title":"VSCode Settings Sync 插件的使用"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>VSCode Settings Sync 插件的使用 | 宗华的博客</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/blog/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">宗华的博客</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">zonghua's blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/blog/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/blog/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/blog/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/blog/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/blog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-sitemap"><a href="/blog/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%BC%E8%AF%BB"><span class="nav-number">1.</span> <span class="nav-text">导读</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%82%E7%94%A8%E4%BA%8E"><span class="nav-number">2.</span> <span class="nav-text">适用于</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E5%BA%8F%E5%87%86%E5%A4%87"><span class="nav-number">3.</span> <span class="nav-text">前序准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"><span class="nav-number">4.</span> <span class="nav-text">快速开始</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5"><span class="nav-number">4.1.</span> <span class="nav-text">第一步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5"><span class="nav-number">4.2.</span> <span class="nav-text">第二步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5"><span class="nav-number">4.3.</span> <span class="nav-text">第三步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5"><span class="nav-number">4.4.</span> <span class="nav-text">第四步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5"><span class="nav-number">4.5.</span> <span class="nav-text">第五步</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">zouzonghua</p>
+  <div class="site-description" itemprop="description">编写可维护的代码</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/blog/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/blog/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/blog/tags/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zouzonghua" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;zouzonghua" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zouzonghua.github.io/blog/2019/07/26/VSCode-Settings-Suny-%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="zouzonghua">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="宗华的博客">
+      <meta itemprop="description" content="编写可维护的代码">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="VSCode Settings Sync 插件的使用 | 宗华的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          VSCode Settings Sync 插件的使用
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-07-26 11:18:53" itemprop="dateCreated datePublished" datetime="2019-07-26T11:18:53+08:00">2019-07-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-03-01 12:48:22" itemprop="dateModified" datetime="2023-03-01T12:48:22+08:00">2023-03-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/%E6%8F%92%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">插件</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="导读"><a href="#导读" class="headerlink" title="导读"></a>导读</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync">Settings Sync</a> 是 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VSCode</a> 编辑器上的一款插件，可以将当前编辑器所有配置和插件同步到 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 上，以后只需要从 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 上获取，就可以一次性恢复插件和配置。</p>
+</blockquote>
+<h2 id="适用于"><a href="#适用于" class="headerlink" title="适用于"></a>适用于</h2><ul>
+<li>Windows 系统</li>
+<li>MacOS 系统</li>
+<li>Ubuntu 系统</li>
+</ul>
+<h2 id="前序准备"><a href="#前序准备" class="headerlink" title="前序准备"></a>前序准备</h2><ul>
+<li>下载安装 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VSCode</a> 编辑器</li>
+<li>注册申请 <a target="_blank" rel="noopener" href="https://github.com/join?source=header-home">GitHub</a> 帐号</li>
+</ul>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><ul>
+<li>先在 VSCode 编辑器里面搜索安装 Settings Sync 插件 ，安装好之后重启编辑器加载插件。<br><img src="http://ww4.sinaimg.cn/large/006tNc79ly1g5d34f0n6aj31hc0r2jsx.jpg" alt=""></li>
+</ul>
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><ul>
+<li><p>按下 Shift + Alt + U （备份）</p>
+<ul>
+<li>Upload Key : Shift + Alt + U \ Shift ⇧+Option ⌥+ U</li>
+<li>Download Key : Shift + Alt + D \ Shift ⇧+Option ⌥+ U</li>
+</ul>
+</li>
+<li><p>弹出 Settings Sync 插件界面选择 Login with Github 绑定 GItHub 帐号<br><img src="http://ww2.sinaimg.cn/large/006tNc79gy1g5d855w5e4j31hc0r2acn.jpg" alt=""></p>
+</li>
+</ul>
+<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><ul>
+<li>弹出浏览器界面 GitHub 登录界面，输入帐号密码进行下一步确定<br><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5d87yg51mj31hc0r2q3h.jpg" alt=""></li>
+</ul>
+<h3 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h3><ul>
+<li><p>确定授权之后页面显示成功就可以关闭当前 tab 页面了</p>
+<p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5d8a3xqsuj31hc0r2aa8.jpg" alt=""></p>
+</li>
+</ul>
+<h3 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h3><ul>
+<li><p>回到 VSCode 编辑器会多出一个 tab 窗口点击 Skip 创建新 Gist（以前旧版插件需要到 GitHub 上面手动创建 Gist，现在更新了之后非常方便）</p>
+<p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5d8nwl4ufj31hc0r2q4k.jpg" alt=""></p>
+</li>
+<li><p>按下 <strong>Shift + Alt + U</strong> 进行当前插件和配置的备份，重装电脑之后或者更换系统之后只需重新下载 VSCode 和 Settings Sync 插件进行以上步骤绑定（如果是已有备份记录的用户只需要选中对应的 Gist ），按下 <strong>Shift + Alt + D</strong> 进行就可以完成 <strong>插件和配置的备份</strong> 恢复了。</p>
+<p><img src="http://ww3.sinaimg.cn/large/006tNc79gy1g5d9x9hejuj31hc0r2jta.jpg" alt=""></p>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/blog/tags/VSCode/" rel="tag"># VSCode</a>
+              <a href="/blog/tags/%E6%8F%92%E4%BB%B6/" rel="tag"># 插件</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blog/2019/07/26/%E6%88%91%E7%9A%84-Mac-%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/" rel="prev" title="我的 Mac 软件清单">
+                  <i class="fa fa-chevron-left"></i> 我的 Mac 软件清单
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/blog/2019/08/18/%E6%88%91%E7%9A%84-VSCode-%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/" rel="next" title="我的 VSCode 插件配置">
+                  我的 VSCode 插件配置 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">桂ICP备2022007439号-1 </a>
+      <img src="/blog/./icp.png" alt="">
+  </div>
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zouzonghua</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/blog/js/comments.js"></script><script src="/blog/js/utils.js"></script><script src="/blog/js/motion.js"></script><script src="/blog/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
