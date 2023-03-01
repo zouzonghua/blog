@@ -12,8 +12,8 @@
     "d": "hexo deploy"
   },
   "dependencies": {
-    "hexo": "^5.2.0",
-    "hexo-deployer-git": "^1.0.0",
+    "hexo": "^5.4.2",
+    "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^0.1.5",
     "hexo-generator-baidu-sitemap": "^0.1.6",
     "hexo-generator-category": "^0.1.3",
